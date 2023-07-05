@@ -1,0 +1,32 @@
+.card-heading{
+    text-align: center;
+    color: rgb(62, 147, 62);
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+.card-main-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    padding: 40px;
+    
+}
+
+.card-container {
+    border: 1px solid black;
+    border-radius: 10px;
+    margin: 20px 25px;
+    padding: 50px 0px;
+    text-transform: capitalize;
+    background-color: aliceblue;
+    color: rgb(21, 21, 91);
+    font-size: 2rem;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.card-container .para { 
+    margin-top: 8px;
+    font-size: 1rem;
+    font-weight: lighter;
+}

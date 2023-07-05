@@ -1,9 +1,15 @@
 import { useEffect, useState } from "react";
 import axios from 'axios';
+import BoxContent from "../BoxContent";
 import "./cards.css"
 
 function Cards() {
   const [categories, setCategories] = useState([]);
+  const [isOpen, setIsOpen] = useState(false);
+
+  const toggleBox = () => {
+    setIsOpen(!isOpen);
+  }
 
   useEffect(() => {
     const fetchApi = async () => {
@@ -19,11 +25,17 @@ function Cards() {
   }, []);
 
   return (
-    <>
-      {categories.map((category) => (
-        <div key={category} className="card-container">{category}</div>
-      ))}
-    </>
+    <div>
+      <span className="card-heading">Chuck Norries</span>
+      <div className="card-main-container">
+          {categories.map((category) => (
+            <div key={category} className="card-container" onClick={toggleBox}>{category}
+              <p className="para">Unlimited Jokes on {category}</p>
+            </div>
+          ))}
+      </div>
+      <BoxContent />
+    </div>
   )
 }
 
