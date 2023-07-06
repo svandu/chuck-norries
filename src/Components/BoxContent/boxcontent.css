@@ -1,0 +1,51 @@
+.box-main-container {
+    border: 1px solid black;
+    padding: 10px 20px;
+    width: 50%;
+    position: absolute;
+    top: 40%;
+    left: 25%;
+    background: rgb(32,40,102);
+    background: linear-gradient(90deg, rgba(32,40,102,1) 0%, rgba(51,80,88,1) 49%, rgba(10,52,87,1) 100%, rgba(118,119,119,1) 100%);
+    color: white;
+    padding: 40px 20px;
+}
+
+.cross-icon {
+    position: absolute;
+    top: 8px;
+    right: 5px;
+    background-color: #0a3457;
+    border: none;
+    font-size: 3rem;
+    color: #fff;
+    cursor: pointer;
+}
+
+.box-main-container .box-head {
+    font-size: 2rem;
+    text-transform: capitalize;
+    font-weight: bold;
+}
+
+.box-para {
+    border: 1px solid black;
+    padding: 10px;
+    margin-top: 8px;
+}
+
+.paragraph {
+    padding: 20px 10px;
+    font-size: 1.8rem;
+    text-align: center;
+}
+
+.box-para .next-btn {
+    padding: 12px 150px;
+    background-color: rgb(52, 52, 228);
+    border: none;
+    font-weight: bold;
+    font-size: 1rem;
+    border-radius: 10px;
+    cursor: pointer;
+}   
