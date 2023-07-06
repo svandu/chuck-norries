@@ -29,7 +29,7 @@ function BoxContent({show, setShow, setCategories, category}) {
       </div>
       <div className="box-para">
         <p className="paragraph">
-          {category.value}
+        Vestibulum dignissim diam quis ultrices iaculis. Nullam vel pharetra magna. Suspendisse dolor massa, congue quis cursus quis, facilisis non mauris. Proin accumsan, tortor ac tempus faucibus,
         </p>
         <button className="next-btn">Next Joke</button>
       </div>
